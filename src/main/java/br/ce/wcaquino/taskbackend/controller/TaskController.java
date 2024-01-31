@@ -31,7 +31,7 @@ public class TaskController {
 	@PostMapping
 	public ResponseEntity<Task> save(@RequestBody Task todo) throws ValidationException {
 		if(todo.getTask() == null || todo.getTask() == "") {
-			throw new ValidationException("Preencha a descrição da tarefa");
+			throw new ValidationException("Preencha a descrição da tarefa!!!");
 		}
 		if(todo.getDueDate() == null) {
 			throw new ValidationException("Preencha a data");
