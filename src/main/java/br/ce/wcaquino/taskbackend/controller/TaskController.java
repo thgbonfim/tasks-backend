@@ -34,7 +34,7 @@ public class TaskController {
 			throw new ValidationException("Preencha a descrição da tarefa");
 		}
 		if(todo.getDueDate() == null) {
-			throw new ValidationException("Fill the due date");
+			throw new ValidationException("Preencha a data");
 		}
 		if(!DateUtils.isEqualOrFutureDate(todo.getDueDate())) {
 			throw new ValidationException("A data de vencimento não deve estar no passado");
